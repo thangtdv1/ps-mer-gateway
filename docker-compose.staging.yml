@@ -1,0 +1,11 @@
+services:
+  ps-mer-gateway:
+    container_name: ps-mer-gateway-staging
+    build:
+      context: ps-mer-gateway
+      dockerfile: Dockerfile.staging
+    ports:
+      - 8000:8000
+    environment:
+      - NODE_ENV=staging
+      - PORT=8000
