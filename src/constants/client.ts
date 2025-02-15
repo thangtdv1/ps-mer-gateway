@@ -9,6 +9,11 @@ const CLIENT = {
     get: 'option_set_svc.get',
     create: 'option_set_svc.create',
   },
+  campaign: {
+    name: 'campaign_svc',
+    get: 'campaign_svc.get',
+    create: 'campaign_svc.create',
+  },
 };
 
 export default CLIENT;
