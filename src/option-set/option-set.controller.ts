@@ -10,6 +10,13 @@ export class OptionSetController {
     return await this.optionSetService.get(id);
   }
 
+
+  @Get()
+  async getList() {
+    return await this.optionSetService.getList();
+  }
+
+  
   @Post()
   async create(@Body() optionSetDto) {
     return this.optionSetService.create(optionSetDto);

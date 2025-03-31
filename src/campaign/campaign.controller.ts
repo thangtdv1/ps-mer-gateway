@@ -5,10 +5,10 @@ import { CampaignService } from './campaign.service';
 export class CampaignController {
   constructor(private campaignService: CampaignService) {}
 
-  @Get(':id')
-  async get(@Param('id') id) {
-    return await this.campaignService.get(id);
-  }
+  // @Get(':id')
+  // async get(@Param('id') id) {
+  //   return await this.campaignService.get(id);
+  // }
 
   @Post()
   async create(@Body() campaignDto) {

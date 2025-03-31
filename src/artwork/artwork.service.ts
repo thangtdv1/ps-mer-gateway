@@ -30,6 +30,12 @@ export class ArtworkService {
     return this.artworkModel.findById(id)
 
   }
+   async getList() {
+
+   
+    return this.artworkModel.find()
+
+  }
   
 
   async create(artworkInput) {

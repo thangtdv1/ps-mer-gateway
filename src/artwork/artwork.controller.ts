@@ -11,6 +11,11 @@ export class ArtworkController {
     return await this.artworkService.get(id);
   }
 
+  @Get()
+  async getList() {
+    return await this.artworkService.getList();
+  }
+
   @Put(':id')
   async update(@Param('id') id,@Body() artworkDto) {
     return await this.artworkService.update(id,artworkDto);
