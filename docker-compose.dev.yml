@@ -1,6 +1,6 @@
 services:
-  ps-mer-gateway:
-    container_name: ps-mer-gateway
+  pz-gateway:
+    container_name: pz-gateway
     build:
       context: .
       dockerfile: Dockerfile.dev
@@ -11,7 +11,7 @@ services:
       - PORT=8000
     volumes:
       - .:/app
-      - ps_mer_gateway_node_modules:/app/node_modules
+      - pz_gateway_node_modules:/app/node_modules
 
 volumes:
-  ps_mer_gateway_node_modules:
+  pz_gateway_node_modules:

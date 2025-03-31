@@ -4,6 +4,11 @@ const CLIENT = {
     get: 'artwork_svc.get',
     create: 'artwork_svc.create',
   },
+  artworkExample: {
+    name: 'artwork_example_svc',
+    create: 'artwork_example_svc.create',
+    get: 'artwork_example_svc.get',
+  },
   optionSet: {
     name: 'option_set_svc',
     get: 'option_set_svc.get',
